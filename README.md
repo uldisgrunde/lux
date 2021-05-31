@@ -1,1 +1,2 @@
 # lux
+testa variants moduļiem
