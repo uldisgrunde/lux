@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Adreses meklētājs</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script> 
+	</head>
+	<body>
+		<input type="text" id="info" placeholder="Ievadiet adresi...">
+		<input type="button" class="submit" value="Meklēt" onclick="info()">
+		<hr>
+		<br>
+		<table>
+			<tr>
+				<td>
+					<input type="radio" name="radio" value="address" checked>
+					<label>Adrese:</label> 
+				</td>
+				<td>
+					<input  type="text" class="readonly" id="address" value="XXXXXXXXXXX" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="radio" value="adr_code">
+					<label>Adreses kods:</label> 
+				</td>
+				<td>
+					<input  type="text" class="readonly" id="adr_code" value="XXXXXXXXXXX" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="radio" value="gps">
+					<label>GPS koordinātes:</label>
+				</td>
+				<td>
+					<input  type="text" class="readonly" id="gps" value="XXXXXXXXXXX" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="radio" value="obj">
+					<label>Objekts/objekta daļa:</label> 
+				</td>
+				<td>
+					<input  type="text" class="readonly" id="obj" value="XXXXXXXXXXX" readonly>
+				</td>
+			</tr>
+			<br>
+		</table>
+		<input type="button" class="save" value="Saglabāt iezīmēto" id="save" onclick="save()">
+		<input type="button" class="save" value="Kopēt iezīmēto" id="copy" onclick="copy()">
+	</body>
+</html>
