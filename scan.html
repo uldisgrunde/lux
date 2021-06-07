@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <title>Code Scanner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/qr_packed.js"></script>
+ </head>
+
+ <body>
+	<input type="button" class="access-QR" value="QR Scanner" onclick="scan('qr')">
+	<input type="button" class="access-Barcode" value="Barcode scanner" onclick="scan('barcode')">
+	<br>
+	<iframe id="viewer" src="">Your browser doesn't support iFrames</iframe>
+ </body>
+ <script>
+  function scan(type) {
+		document.getElementById("viewer").src=`${type}.html`;
+	}
+ </script>
+</html>
