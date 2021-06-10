@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script  defer src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyBLr79KpqcF7H7kMYgnxWSwC7VEfWF1H3E"  type="text/javascript"></script>
+	<link rel="stylesheet" href="css/Distance.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="jumbotron">
+<h1>Izreikina distanci starp divam vietam</h1>
+<hr></hr>
+</div>
+
+<div class="col-md-6">
+<form id="distance_form">
+<div class="form-group"><label>Sakumpunkts: </label> <input type="text" class="form-control" id="from_places" placeholder="Ievadi lokaciju" /> <input id="origin" name="origin" required="" type="hidden" /></div>
+
+<div class="form-group"><label>Galapunkts </label> <input  type="text" class="form-control" id="to_places" placeholder="Ievadi lokaciju" /> <input id="destination" name="destination" required="" type="hidden" /></div>
+<input class="save" type="submit" value="Calculate" /></form>
+
+<br></br>
+
+<div id="result">
+<ul class="list-group">
+	<li class="list-group-item d-flex justify-content-between align-items-center"><label>KM:</label> <span id='in_kilo' class="badge badge-primary badge-pill"></span></li>
+	<li class="list-group-item d-flex justify-content-between align-items-center"><label>Laiks:</label> <span id="duration_text" class="badge badge-primary badge-pill"></span></li>
+	<li class="list-group-item d-flex justify-content-between align-items-center"><label>No:</label> <span id="from" class="badge badge-primary badge-pill"></span></li>
+	<li class="list-group-item d-flex justify-content-between align-items-center"> <label>Uz:</label> <span id="to" class="badge badge-primary badge-pill"></span></li>
+</ul>
+<hr></hr>
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/Distance.js"></script>
+
+</body>
+</html>
