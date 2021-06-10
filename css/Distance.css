@@ -1,0 +1,44 @@
+input[type=text], select {
+  width: 30%;
+  padding: 8px 15px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:12px;
+}
+
+.save {
+  width: 200px;
+  background-color: black;
+  color: white;
+  margin: 8px 350px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:15px;
+  font-family:verdana;
+  float:left;
+  font-weight: bold;
+}
+.save:hover {
+  background-color: #082a63;
+}
+hr {
+  width: 100%;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-width: 0px;
+  color: red;
+  background-color: DarkRed;
+  height:5px
+}
+label {
+  line-height: 1.4;
+  font-family:verdana;
+  cursor: pointer;
+  font-weight: bold;
+}
