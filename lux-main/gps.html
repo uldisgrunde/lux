@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="lv">
+	<head>
+		<title>GPS</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/gps.css">
+		<script src="js/gps.js"></script> 
+	</head>
+	<div>
+		<h1>GPS programma</h1>
+	</div>
+	<div>
+		<p>Koordinātes:</p>
+		<br>
+		<br>
+		<br>
+		<p id="demo"></p>
+		<input type="hidden" id="demos">
+		<p>Adrese:</p>
+		<br>
+		<br>
+		<input type="button" class="button" value="Kopēt" onclick="copy()">
+		<input type="button" class="button buttons" value="Saglabāt" onclick="saveFile()">
+		<br>
+		<input type="button" class="button" value="Meklēt *" onclick="">
+		<input type="button" class="button buttons" value="Refresh" onclick="getLocation()" >
+	</div>
+	<script>
+		var x = document.getElementById("demo");
+		var xx = document.getElementById("demos");
+	</script>
+	</body>
+</html>

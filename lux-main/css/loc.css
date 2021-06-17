@@ -1,0 +1,75 @@
+input[type=text], select {
+  width: 60%;
+  padding: 8px 15px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 5px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:15px;
+}
+
+.submit {
+  width: 100px;
+  background-color: red;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:15px;
+  font-family:verdana;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: #d61515;
+}
+.save {
+  width: 200px;
+  background-color: black;
+  color: white;
+  margin: 8px 350px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:15px;
+  font-family:verdana;
+  float:left;
+  font-weight: bold;
+}
+.save:hover {
+  background-color: #082a63;
+}
+hr {
+  width: 100%;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-width: 0px;
+  color: red;
+  background-color: red;
+  height:1px
+}
+label {
+  line-height: 1.4;
+  font-family:verdana;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type=radio] {
+  cursor: pointer;
+}
+table {
+  width: 550px;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  font-size:17px;
+}
+.readonly{/*nestrada*/
+  border: 0px none black;
+  border-style: none;
+}

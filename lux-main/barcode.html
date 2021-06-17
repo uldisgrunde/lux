@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>barcode</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/exif.min.js"></script>
+		<script src="js/BarcodeScanner.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</head>
+	<body>
+		<div>
+			Data:<input type="text" id="code" readonly></input>
+		</div>
+		<div>
+			<input type="button" value="CopyText" onclick="myFunctionCopy()">
+		</div> 
+	</body>
+	<script>
+		setupLiveReader(document.getElementById('code'))
+	</script>
+</html>
