@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+
+    <title>Code Scanner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/dropdown.css" >
+    <script src="js/qr_packed.js"></script>
+ </head>
+
+ <body>
+<div class="dropdown">
+  <button class="dropbtn">Izvēlne</button>
+  <div class="dropdown-content">
+    <a class="access-QR" value="QR Scanner" onclick="scan('qr')">QR</a>
+    <a class="access-Barcode" value="Barcode scanner" onclick="scan('Barcode')">Barcode</a>
+    <a class="access-location" value="Location" onclick="scan('location')">Location</a>
+	<a class="access-gps" value="GPS" onclick="scan('gps')">GPS</a>
+	<a class="access-Reminder" value="Reminder" onclick="scan('reminder')">Reminder</a>
+  </div>
+</div> <br>
+	<iframe id="viewer" src="">Your browser doesn't support iFrames</iframe>
+ </body>
+ <script>
+  function scan(type) {
+		document.getElementById("viewer").src=`${type}.html`;
+	}
+ </script>
+</html>

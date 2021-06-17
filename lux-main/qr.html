@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Scanner</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/qr_packed.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <h2>QR koda lasītājs</h2>
+      <a id="btn-scan-qr"><input type="button" value="Spied" onclick="ScanQR()">
+      </a>
+      <canvas hidden="" id="qr-canvas"></canvas>
+      <div id="qr-result">
+        <b>Data:</b> <input type="text" id="outputData" readonly ></input>
+      </div>
+	  <input type="button" value="CopyText" onclick="myFunctionCopy()">
+    </div>
+    <script src="js/qrCodeScanner.js"></script>
+  </body>
+</html>
