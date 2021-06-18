@@ -40,7 +40,7 @@ $(function() {
                 var origin = response.originAddresses[0];
                 var destination = response.destinationAddresses[0];
                 if (response.rows[0].elements[0].status === "ZERO_RESULTS") {
-                    $('#result').html("Better get on a plane. There are no roads between "  + origin + " and " + destination);
+                    $('#result').html("Neiespējami ar mašīnu pārvietoties starp "  + origin + " un " + destination);
                 } else {
                     var distance = response.rows[0].elements[0].distance;
                     var duration = response.rows[0].elements[0].duration;
